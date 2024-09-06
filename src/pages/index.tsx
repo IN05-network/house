@@ -75,7 +75,7 @@ const RootPage = () => {
         <div className="w-full p-4 font-mono laptop:text-left">
           <div className="mx-auto p-4 laptop:w-4/5">
             <h1 className="text-center font-bold text-3xl">
-              Membership recruitment: seeking new residents
+              Membership Recruitment: Seeking New Residents
             </h1>
             <br />
             <div id="top" className="">
