@@ -83,7 +83,15 @@ const RootPage = () => {
               <br />
               <p>
                 New members can also opt to be residents of the IN05 house,
-                located at the cultural heart of Tokyo.
+                located in the center of Tokyo.
+              </p>
+              <br />
+              <h2>Why?</h2>
+              <p>
+                The IN05 team is expanding to open a second base of operations,
+                located in the outskirts of Metropolitan tokyo. To support this
+                strategic expansion, we also intend to recruit a few new members
+                to the IN05 crew.
               </p>
             </div>
             <div id="bottom" className="py-8">
