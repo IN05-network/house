@@ -37,7 +37,7 @@ const RootPage = () => {
   };
 
   return (
-    <div className="text-left">
+    <div className="text-left font-mono">
       <div
         className="inline-block p-6"
         onMouseEnter={() => setIsHover(true)}
@@ -46,7 +46,7 @@ const RootPage = () => {
         <Link className="no-underline hover:text-neutral-100" href="/">
           <div className="flex items-baseline">
             <span
-              className={`font-bold font-mono text-[48px] ${isHover ? 'text-info' : ''}`}
+              className={`font-bold text-[36px] ${isHover ? 'text-info' : ''}`}
             >
               house.
             </span>{' '}
@@ -57,8 +57,8 @@ const RootPage = () => {
                   : 'https://www.in05.org/images/logotype_white.png'
               }
               alt="Logo"
-              width={100}
-              height={100}
+              width={72}
+              height={72}
             />
           </div>
         </Link>
@@ -73,12 +73,20 @@ const RootPage = () => {
           />
         </div>
 
-        <div className="w-full p-4 text-center laptop:text-left">
-          <ul>
-            <li>
-              <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
-            </li>
-          </ul>
+        <div className="p-4 laptop:w-4/5">
+          <div id="top" className="laptop:w-2/5">
+            <p>
+              We are recruiting new residents to the IN05 house, located at the
+              heart of Tokyo.
+            </p>
+          </div>
+          <div id="bottom" className="w-full text-center laptop:text-right">
+            <ul>
+              <li>
+                <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
