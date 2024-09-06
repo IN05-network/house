@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import LogoMark from '/public/images/logomark.svg';
-import LogoType_White from '/public/images/logotype_white.png';
+import { useState } from 'react';
 
 const RootPage = () => {
+  const [isHover, setIsHover] = useState(false);
+
   const LinkWithIcon = (props: { url: string; text: string }) => {
     const style =
       'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px] inline-block bg-contain';
@@ -36,28 +37,44 @@ const RootPage = () => {
   };
 
   return (
-    <div className="text-center">
-      <Link href="/">
-        <Image src={LogoType_White} alt="Logo" width={100} height={100} />
-      </Link>
+    <div className="text-left">
+      <div
+        className="inline-block p-6"
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
+        <Link className="no-underline hover:text-neutral-100" href="/">
+          <div className="flex items-baseline">
+            <span
+              className={`font-bold font-mono text-[48px] ${isHover ? 'text-info' : ''}`}
+            >
+              house.
+            </span>{' '}
+            <Image
+              src={
+                isHover
+                  ? 'https://www.in05.org/images/logotype_blue.png'
+                  : 'https://www.in05.org/images/logotype_white.png'
+              }
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </div>
+        </Link>
+      </div>
 
-      <div id="section" className="flex flex-col laptop:flex-row">
-        <div className="flex w-full px-4">
-          <Image src={LogoMark} alt="IN05" height={960} />
+      <div id="section" className="">
+        <div className="fixed inset-0 z-[-1] h-full w-full opacity-50">
+          <Image
+            src="https://www.in05.org/images/logomark.svg"
+            alt="IN05"
+            layout="fill"
+          />
         </div>
 
         <div className="w-full p-4 text-center laptop:text-left">
           <ul>
-            {/* add more socials  */}
-            <li>
-              <LinkWithIcon
-                url="https://soundcloud.com/in05-network"
-                text="soundcloud"
-              />
-            </li>
-            <li>
-              <LinkWithIcon url="https://x.com/in05x" text="twitter" />
-            </li>
             <li>
               <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
             </li>
