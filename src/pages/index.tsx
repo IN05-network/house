@@ -10,7 +10,7 @@ const RootPage = () => {
       'bg-[image:var(--favicon-url)] bg-left bg-no-repeat pl-[20px] inline-block bg-contain';
     let fetchedUrl = '';
     if (props.url.startsWith('/')) {
-      fetchedUrl = '/favicon.ico';
+      fetchedUrl = 'https://www.in05.org/favicon.ico';
     } else if (props.url.startsWith('mailto:')) {
       fetchedUrl =
         'https://www.google.com/s2/favicons?domain=https://webmail.disroot.org';
