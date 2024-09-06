@@ -72,16 +72,16 @@ const RootPage = () => {
             layout="fill"
           />
         </div>
-
-        <div className="w-full p-4 text-center laptop:text-left font-mono">
+        <div className="w-full p-4 text-center font-mono laptop:text-left">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold mb-4">Welcome to IN05 House</h1>
-            <p className="text-lg mb-2">
-               We are looking for people to join us!
+            <h1 className="mb-4 font-bold text-3xl">Welcome to IN05 House</h1>
+            <p className="mb-2 text-lg">
+              We are looking for people to join us!
             </p>
-            <p className="text-lg mb-2">
-              IN05 is an emergent network of hackers, designers, artists, and punks in Tokyo.
-			  We are looking for people to join us in implementing Hacker House.
+            <p className="mb-2 text-lg">
+              IN05 is an emergent network of hackers, designers, artists, and
+              punks in Tokyo. We are looking for people to join us in
+              implementing Hacker House.
             </p>
           </div>
 
