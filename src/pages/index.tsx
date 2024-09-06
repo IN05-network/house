@@ -73,7 +73,18 @@ const RootPage = () => {
           />
         </div>
 
-        <div className="w-full p-4 text-center laptop:text-left">
+        <div className="w-full p-4 text-center laptop:text-left font-mono">
+          <div className="mb-6">
+            <h1 className="text-3xl font-bold mb-4">Welcome to IN05 House</h1>
+            <p className="text-lg mb-2">
+               We are looking for people to join us!
+            </p>
+            <p className="text-lg mb-2">
+              IN05 is an emergent network of hackers, designers, artists, and punks in Tokyo.
+			  We are looking for people to join us in implementing Hacker House.
+            </p>
+          </div>
+
           <ul>
             <li>
               <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
