@@ -37,7 +37,7 @@ const RootPage = () => {
   };
 
   return (
-    <div className="text-left">
+    <div className="text-left font-mono">
       <div
         className="inline-block p-6"
         onMouseEnter={() => setIsHover(true)}
@@ -46,9 +46,9 @@ const RootPage = () => {
         <Link className="no-underline hover:text-neutral-100" href="/">
           <div className="flex items-baseline">
             <span
-              className={`font-bold font-mono text-[48px] ${isHover ? 'text-info' : ''}`}
+              className={`font-bold text-[36px] ${isHover ? 'text-info' : ''}`}
             >
-              house.
+              🏠.
             </span>{' '}
             <Image
               src={
@@ -57,8 +57,8 @@ const RootPage = () => {
                   : 'https://www.in05.org/images/logotype_white.png'
               }
               alt="Logo"
-              width={100}
-              height={100}
+              width={72}
+              height={72}
             />
           </div>
         </Link>
@@ -72,24 +72,28 @@ const RootPage = () => {
             layout="fill"
           />
         </div>
-        <div className="w-full p-4 text-center font-mono laptop:text-left">
-          <div className="mb-6">
-            <h1 className="mb-4 font-bold text-3xl">Welcome to IN05 House</h1>
-            <p className="mb-2 text-lg">
-              We are looking for people to join us!
-            </p>
-            <p className="mb-2 text-lg">
-              IN05 is an emergent network of hackers, designers, artists, and
-              punks in Tokyo. We are looking for people to join us in
-              implementing Hacker House.
-            </p>
+        <div className="w-full p-4 font-mono laptop:text-left">
+          <div className="mx-auto p-4 laptop:w-4/5">
+            <h1 className="text-center font-bold text-3xl">
+              Membership recruitment: seeking new residents
+            </h1>
+            <br />
+            <div id="top" className="">
+              <p>We are recruiting new members to the IN05 network. </p>
+              <br />
+              <p>
+                New members can also opt to be residents of the IN05 house,
+                located at the cultural heart of Tokyo.
+              </p>
+            </div>
+            <div id="bottom" className="py-8">
+              <ul>
+                <li>
+                  <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <ul>
-            <li>
-              <LinkWithIcon url="mailto:contact@in05.org" text="contact" />
-            </li>
-          </ul>
         </div>
       </div>
     </div>
