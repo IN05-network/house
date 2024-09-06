@@ -1,4 +1,4 @@
-# IN05 official website
+# IN05 house website
 
 ## Requirements
 

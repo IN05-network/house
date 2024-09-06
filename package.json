@@ -1,19 +1,19 @@
 {
-  "name": "in05-website",
+  "name": "in05house-website",
   "version": "0.1.0",
   "private": true,
-  "description": "official website for IN05 network",
+  "description": "IN05 house information page",
   "main": "src/pages/index.tsx",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/in05-network/website.git"
+    "url": "git+https://github.com/in05-network/house.git"
   },
   "author": "neila <neila@users.noreply.github.com> (https://neila.github.io/)",
   "contributors": [
     "neila <neila@users.noreply.github.com> (https://neila.github.io/)"
   ],
   "bugs": {
-    "url": "https://github.com/in05-network/website/issues"
+    "url": "https://github.com/in05-network/house/issues"
   },
   "scripts": {
     "dev": "next dev",
