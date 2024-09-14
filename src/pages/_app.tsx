@@ -14,6 +14,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <I18nProvider
       lang={lang}
+      // @ts-ignore bug in next-translate
       namespaces={{ common: lang === 'ja' ? commonJA : commonEN }}
     >
       <LanguageWrapper>

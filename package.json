@@ -45,6 +45,6 @@
   },
   "packageManager": "pnpm@9.1.4+sha1.2432063d815cfa88fd9fef1d85a445e3f609851d",
   "simple-git-hooks": {
-    "pre-commit": "pnpm run biome ci ."
+    "pre-commit": "pnpm biome ci ."
   }
 }
