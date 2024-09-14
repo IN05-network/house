@@ -1,4 +1,5 @@
 import { Link } from '@/components/_shared/Link';
+import { useRouteRedirect } from '@/hooks/useRouteRedirect';
 import { getClientBuildManifest } from 'next/dist/client/route-loader';
 import { isDynamicRoute } from 'next/dist/shared/lib/router/utils/is-dynamic';
 import { parseRelativeUrl } from 'next/dist/shared/lib/router/utils/parse-relative-url';
@@ -57,6 +58,7 @@ function doesNeedsProcessing(router: NextRouter) {
 
 const Custom404 = () => {
   const router = useRouter();
+  const { redirect } = useRouteRedirect();
 
   const [isNotFound, setIsNotFound] = useState(false);
 
@@ -83,10 +85,11 @@ const Custom404 = () => {
   return (
     <div className="fixed inset-0 flex items-center justify-center">
       <div className="flex flex-col gap-10">
-        <h1>Custom 404 - Page Not Found</h1>
-        <Link href="/">
-          <button type="button">Go to Home Page</button>
-        </Link>
+        <h1>404 - Page Not Found</h1>
+
+        <button type="button" onClick={() => redirect('/')}>
+          <p className="hover:underline">Go to Home Page</p>
+        </button>
       </div>
     </div>
   );

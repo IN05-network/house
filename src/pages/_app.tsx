@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import { LanguageWrapper } from '@/wrappers/LanguageWrapper';
 import I18nProvider from 'next-translate/I18nProvider';
 import type { AppProps } from 'next/app';
 import { i18nConfig } from '../../i18n';
@@ -15,7 +16,9 @@ const App = ({ Component, pageProps, router }: AppProps) => {
       lang={lang}
       namespaces={{ common: lang === 'ja' ? commonJA : commonEN }}
     >
-      <Component {...pageProps} />
+      <LanguageWrapper>
+        <Component {...pageProps} />
+      </LanguageWrapper>
     </I18nProvider>
   );
 };
