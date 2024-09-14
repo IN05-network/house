@@ -7,6 +7,5 @@ interface IUseI18n {
 
 export const useI18n = ({ namespace }: IUseI18n = {}) => {
   const { t } = useTranslation(namespace ? namespace : i18nConfig.defaultNS);
-
   return { t };
 };
