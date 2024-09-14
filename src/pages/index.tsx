@@ -1,8 +1,11 @@
+import { useI18n } from '@/hooks/usei18n';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
 const RootPage = () => {
+  const { t } = useI18n();
+
   const [isHover, setIsHover] = useState(false);
 
   const LinkWithIcon = (props: { url: string; text: string }) => {
@@ -74,24 +77,54 @@ const RootPage = () => {
         </div>
         <div className="w-full p-4 font-mono laptop:text-left">
           <div className="mx-auto p-4 laptop:w-4/5">
-            <h1 className="text-center">
-              Membership Recruitment: Seeking New Residents
-            </h1>
+            <h1 className="text-center">{t('new-recruitment.title')}</h1>
             <br />
             <div id="top" className="">
-              <p>We are recruiting new members to the IN05 network. </p>
+              <p>We are recruiting new members to the IN05 network.</p>
               <br />
               <p>
                 New members can also opt to be residents of the IN05 house,
-                located in the center of Tokyo.
+                located in the center of Tokyo. IN05 house is a co-residential
+                space for our members to create a mutually empowering
+                environment and lifestyle.
               </p>
               <br />
               <h2>Why?</h2>
               <p>
-                The IN05 team is expanding to open a second base of operations,
+                Our team is expanding to open a second base of operations,
                 located in the outskirts of Metropolitan tokyo. To support this
                 strategic expansion, we also intend to recruit a few new members
                 to the IN05 crew.
+              </p>
+              <h2>Who are we looking for?</h2>
+              <p>
+                We are looking for young professionals (18-29 yrs), with a
+                strong passion for personal growth and collaborative living. We
+                welcome individuals from diverse backgrounds, including but not
+                limited to:
+              </p>
+              <ul>
+                <li>Engineers, Technologists and "Hackers"</li>
+                <li>Entrepreneurs and startup founders</li>
+                <li>Multidisciplinary researchers</li>
+                <li>Creative professionals (designers, writers, etc.)</li>
+                <li>Service professionals (chefs, baristas, etc.)</li>
+              </ul>
+              <br />
+              <p>Our members share the following core values:</p>
+              <ul>
+                <li>Open-minded and adaptable</li>
+                <li>Eager to contribute to a vibrant community</li>
+                <li> Interested in cross-disciplinary collaboration </li>
+                <li>Committed to a sustainably exciting lifestyle</li>
+              </ul>
+              <br />
+              <p>
+                Join us in creating a dynamic, supportive environment where
+                ideas flourish, and lifelong connections are forged. Whether
+                you're a coder, a creator, or a changemaker, if you have
+                something special to bring to the table, there's a place for you
+                in the IN05 community.
               </p>
             </div>
             <div id="bottom" className="py-8">
