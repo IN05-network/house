@@ -1,0 +1,25 @@
+{
+  "new-recruitment": {
+    "title": "Membership Recruitment: Seeking New Members",
+    "description": "We are recruiting new members to the IN05 network. New members can also opt to be residents of the IN05 house, located in the center of Tokyo. IN05 house is a co-residential space for our members to create a mutually empowering environment and lifestyle.",
+    "why": "Why?",
+    "why-description": "IN05 network is an emergent, interdisciplinary, collaborative project founded by three members who shared a passion for technology, entrepreneurship, and music. We opened our first base of operations in Jan '24, starting as a co-residential space in the heart of Metropolitan Tokyo. Our team is expanding to open a second base of operations, located in the outskirts of Metropolitan tokyo. To support this strategic expansion, we also intend to recruit a few new members to the IN05 crew.",
+    "ideal-candidates": "Who are we looking for?",
+    "ideal-candidates-description": "We are looking for young professionals (18-29 yrs), with a strong passion for personal growth and collaborative living. We welcome individuals from diverse backgrounds, including but not limited to:",
+    "ideal-candidates-list": [
+      "Engineers, Technologists and 'Hackers'",
+      "Entrepreneurs and startup founders",
+      "Multidisciplinary researchers",
+      "Creative professionals (designers, writers, craftsmen, etc.)",
+      "Service professionals (chefs, baristas, archivists etc.)"
+    ],
+    "core-values": "Our members share the following core values:",
+    "core-values-list": [
+      "Open-minded and adaptable",
+      "Eager to contribute to a vibrant community",
+      "Interested in cross-disciplinary collaboration",
+      "Committed to a sustainable and exciting lifestyle"
+    ],
+    "final-remarks": "Join us in creating a dynamic, supportive environment where ideas flourish, and lifelong connections are forged. Whether you're a coder, a creator, or a changemaker, if you have something special to bring to the table, there's a place for you in the IN05 community."
+  }
+}
